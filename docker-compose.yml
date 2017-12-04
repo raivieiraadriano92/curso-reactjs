@@ -1,0 +1,10 @@
+version: '2'
+
+services:
+    client:
+        image: raivieiraadriano92/node-tools:latest
+        volumes:
+            - ./client:/home/app
+        ports:
+            - "3000:3000"
+        tty: true
